@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale1=1.0">
+        <title> Behold Bohol</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class = "container">
+            <div class="navbar">
+             <a href="index.html"><img src="images/logoB2.png"  class="logo"></a>
+                <nav>
+                    <ul id="menulist">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <img src="images/w.jpg" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class = "content">   
+            <h2>INCREDIBLE THINGS TO SEE IN</h2>
+            <hr>
+            <h1>Bohol</h1>
+            <hr> 
+            <p>PHILIPPINES</p>
+            <button class="button"><span></span> <a href = "gallery.html"> VISIT US</button>
+
+        </div>
+        <script>
+
+            var menulist = document.getElementById("menulist");
+
+            menulist.style.maxHeight = "0px";
+
+            function togglemenu(){
+                if(menulist.style.maxHeight == "0px"){
+
+                    menulist.style.maxHeight = "180px"
+                }
+            else
+                {
+                menulist.style.maxHeight = "0px"
+            }
+            }
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale1=1.0">
+        <title> Behold Bohol</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    </head>
+<body>
+    <div class = "containergallery">
+        <div class="navbargallery">
+         <a href="index.html"><img src="images/logoB2.png"  class="logo"></a>
+            <nav>
+                <ul id="menulistgallery">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="images/w.jpg" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <!-- <div class="containerbohol">
+        <div class="image-container">
+          <a href="your-page.html">
+            <img src="images/B2.png" alt="Your Image" class="image">
+            <div class="overlay">EXPLORE </div>
+          </a>
+        </div>
+      </div> -->
+      <div class="containerbohol">
+      <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="images/B2.png" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="images/fl.png" alt="" class="image">
+              <div class="overlay">FLOATING RESTAURANT IN LOBOC RIVER</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/t.png" alt="" class="image">
+              <div class="overlay">TARSIER</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/bc.png" alt="" class="image">
+              <div class="overlay">BLOOD COMPACT IN TAGBILARAN</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/f.png" alt="" class="image">
+              <div class="overlay">MAN MADE FOREST IN BILAR</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/c (2).png" alt="" class="image">
+              <div class="overlay">HINAGDANAN CAVE</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/ch.png" alt="" class="image">
+              <div class="overlay">BACLAYON CHURCH</div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/h.png" alt="" class="image">
+              <div class="overlay">CHOCOLATE HILLS</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+      <div class="word">
+        <p>  <strong>B</strong>ohol Island ranks among the best destinations in Southeast Asia as few places on earth combine natural beauty with interesting man-made structures so well. One day can be spent trekking through the jungle, spotting some of the world's oldest primates while the next can be spent admiring the island's colonial architecture and the next lazing on a beautiful beach.</p>
+        <img src ="images/logoseal.png" alt="" class="seal">
+      </div>
+      <h2 class="top">TOP SIGHTS IN BOHOL</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+          <a href="cholethills.html">
+            <img src="images/cholet.png" alt="Image 1">
+            <div class="overlay">
+              <div class="overlay-content">CHOCOLATE HILLS</div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="tarsier.html">
+            <img src="images/tarsier.jpg" alt="Image 2">
+            <div class="overlay">
+              <div class="overlay-content">TARSIER</div>
+            </div>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a href="page3.html">
+            <img src="images/church.jpg" alt="Image 3">
+            <div class="overlay">
+              <div class="overlay-content">BACLAYON CHURCH</div>
+            </div>
+          </a>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '#image-carousel' ,{
+      type      : 'fade',
+    rewind    : true,
+    } ).mount();
+  } );
+
+        var menulistgallery = document.getElementById("menulistgallery");
+
+        menulistgallery.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menulistgallery.style.maxHeight == "0px"){
+
+                menulistgallery.style.maxHeight = "180px"
+            }
+        else
+            {
+            menulistgallery.style.maxHeight = "0px"
+        }
+        }
+        
+    </script>
+</body>
+</html>
